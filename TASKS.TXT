@@ -1,0 +1,3 @@
+
+- Colocar tiktok na tela About
+- Tentar subir o backend no Heroku
