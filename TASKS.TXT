@@ -3,3 +3,32 @@
 - Tentar subir o backend no Heroku
 - Antes de ver se precisa mudar o back, testar no dispositivo gerando o build do apk
 - Após tudo funcionando corretamente, tentar colocar anúncios
+
+
+********************
+Exemplo a atualização do APP
+
+Aqui está um exemplo de como esses campos devem ser configurados no app.json:
+{
+  "expo": {
+    "name": "YourAppName",
+    "slug": "your-app-slug",
+    "version": "1.0.1", -> MUDAR A VERSAO
+    "android": {
+      "versionCode": 2, -> ADICIONAR UM VERSIONCODE
+      "package": "com.yourcompany.yourapp"
+    }
+  }
+}
+
+Depois de atualizar o app.json, você pode iniciar um novo build para gerar o APK atualizado.
+eas build --profile production --platform android
+
+**************************************************************
+
+Você pode baixar a Keystore que o EAS gerou para você:
+    eas credentials -p android --json > android-credentials.json
+
+Depois de atualizar o app vc pode verificar a Keystore:
+    eas credentials -p android
+Isso exibirá as informações da Keystore atualmente usada pelo EAS.
