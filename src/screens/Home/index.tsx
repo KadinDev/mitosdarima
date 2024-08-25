@@ -34,7 +34,12 @@ export function Home(){
                     flex: 1, paddingBottom: 40
                 }}
             >
-                
+                {/*
+                Eu poderia criar várias View colocando cada botão separado e o navigation para cada um de forma separada,
+                mas para ficar menos código eu coloquei todos nesse .map abaixo, e levo todos para uma mesma tela (Training),
+                nesse tela de Training eu mostro o conteúdo dentro dela de acordo com a escolha do usuário. nela eu renderizo
+                todas as SCREENS
+                */}
                 {trainingNavigation.map(item => (
                     <View style={styles.Item} key={item.id} >
                         <ImageBackground 

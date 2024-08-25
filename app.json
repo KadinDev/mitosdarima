@@ -22,10 +22,17 @@
       "permissions": [
         "android.permission.RECORD_AUDIO",
         "android.permission.MODIFY_AUDIO_SETTINGS"
-      ]
+      ],
+      "package": "com.devricardo.mitosdarima"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "396e97a4-ff49-4a19-bff6-a9c8ca53cde6"
+      }
+    },
+    "owner": "devricardo"
   }
 }

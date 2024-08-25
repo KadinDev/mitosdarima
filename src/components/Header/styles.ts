@@ -22,11 +22,9 @@ export const styles = StyleSheet.create({
         bottom: RFValue(15),
         alignItems: 'center',
         justifyContent: 'center',
-        width: RFValue(40),
-        height: RFValue(40),
         borderRadius: RFValue(20),
         backgroundColor: COLORS.BACKGROUND,
-        padding: 5
+        padding: RFValue(8)
     },
     Greeting: {
         flexDirection: 'column',
